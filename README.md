@@ -1,2 +1,3 @@
 # BigBasket-Like-Ecommerce
 Spring Grocery Shop - An e-commerce platform for online grocery shopping, implemented using Spring Boot and Spring Initializr. Features CRUD operations for product management and a dynamic shopping cart with automatic removal of items when quantity reaches zero.
+Moreover, with the recent addition of search functionality and dynamic data retrieval through a REST API, Spring Grocery Shop offers users a comprehensive and seamless online shopping experience. This enhancement enables swift and efficient product searches while ensuring real-time updates on product information. Consequently, the platform not only enhances user convenience but also fosters customer engagement, ultimately driving overall satisfaction.
