@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Products</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background-color: #f8f9fa;
+            padding: 20px;
+        }
+
+        form {
+            max-width: 500px;
+            margin: auto;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<form th:object="${newProduct}" method="post" th:action="@{/product/addProducts}">
+    <div class="form-group">
+        <label>PRODUCT NAME</label>
+        <input type="text" th:field="*{ProductName}" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label>Brand</label>
+        <input type="text" th:field="*{Brand}" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label>Price</label>
+        <input type="text" th:field="*{Price}" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label>Discounted Price</label>
+        <input type="text" th:field="*{discounted_price}" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label>Image URL</label>
+        <input type="text" th:field="*{Image_url}" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label>Quantity</label>
+        <input type="text" th:field="*{Quantity}" class="form-control">
+    </div>
+
+    <div class="form-group">
+        <label>Category</label>
+        <input type="text" th:field="*{Category}" class="form-control">
+    </div>
+
+    <button type="submit" class="btn btn-primary">ADD PRODUCTS</button>
+</form>
+
+
+</body>
+</html>
